@@ -1,0 +1,68 @@
+{
+    "aberdeen": {
+        "constituencyname": "Aberdeen",
+        "constituencymatches": ["Aberdeen Central",
+            "Aberdeen Donside",
+            "Aberdeen South and North Kincardine",
+            "Aberdeenshire East",
+            "Aberdeenshire West"
+        ]
+    },
+    "cunninghame": {
+        "constituencyname": "Cunninghame",
+        "constituencymatches": ["Cunninghame North",
+            "Cunninghame South"
+        ]
+    },
+    "dundee": {
+        "constituencyname": "Dundee",
+        "constituencymatches": ["Dundee East",
+            "Dundee West"
+        ]
+    },
+    "edinburgh": {
+        "constituencyname": "Edinburgh",
+        "constituencymatches": ["Edinburgh Eastern",
+            "Edinburgh Central",
+            "Edinburgh Pentlands",
+            "Edinburgh Southern",
+            "Edinburgh Western"
+        ]
+    },
+    "falkirk": {
+        "constituencyname": "Falkirk",
+        "constituencymatches": ["Falkirk East",
+            "Falkirk West"
+        ]
+    },
+    "glasgow": {
+        "constituencyname": "Glasgow",
+        "constituencymatches": ["Glasgow Anniesland",
+            "Glasgow Cathcart",
+            "Glasgow Kelvin",
+            "Glasgow Maryhill and Springburn",
+            "Glasgow Pollok",
+            "Glasgow Provan",
+            "Glasgow Shettleston",
+            "Glasgow Southside"
+        ]
+    },
+    "midlothian": {
+        "constituencyname": "Midlothian",
+        "constituencymatches": ["Midlothian North and Musselburgh",
+            "Midlothian South, Tweeddale and Lauderdale"
+        ]
+    },
+    "perthshire": {
+        "constituencyname": "Perthshire",
+        "constituencymatches": ["Perthshire North",
+            "Perthshire South and Kinross-shire"
+        ]
+    },
+    "renfrewshire": {
+        "constituencyname": "Renfrewshire",
+        "constituencymatches": ["Renfrewshire North and West",
+            "Renfrewshire South"
+        ]
+    }
+}

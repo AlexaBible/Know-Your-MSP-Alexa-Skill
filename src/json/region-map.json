@@ -1,0 +1,66 @@
+{
+    "central": {
+        "regionid": "S17000009",
+        "regionname": "Central Scotland"
+    },
+    "centralscotland": {
+        "regionid": "S17000009",
+        "regionname": "Central Scotland"
+    },
+    "glasgow": {
+        "regionid": "S17000010",
+        "regionname": "Glasgow"
+    },
+    "highlands": {
+        "regionid": "S17000011",
+        "regionname": "Highlands and Islands"
+    },
+    "islands": {
+        "regionid": "S17000011",
+        "regionname": "Highlands and Islands"
+    },
+    "highlandsandislands": {
+        "regionid": "S17000011",
+        "regionname": "Highlands and Islands"
+    },
+    "lothian": {
+        "regionid": "S17000012",
+        "regionname": "Lothian"
+    },
+    "mid": {
+        "regionid": "S17000013",
+        "regionname": "Mid Scotland and Fife"
+    },
+    "fife": {
+        "regionid": "S17000013",
+        "regionname": "Mid Scotland and Fife"
+    },
+    "midscotlandandfife": {
+        "regionid": "S17000013",
+        "regionname": "Mid Scotland and Fife"
+    },
+    "northeast": {
+        "regionid": "S17000014",
+        "regionname": "North East Scotland"
+    },
+    "northeastscotland": {
+        "regionid": "S17000014",
+        "regionname": "North East Scotland"
+    },
+    "south": {
+        "regionid": "S17000015",
+        "regionname": "South Scotland"
+    },
+    "southscotland": {
+        "regionid": "S17000015",
+        "regionname": "South Scotland"
+    },
+    "westscotland": {
+        "regionid": "S17000016",
+        "regionname": "West Scotland"
+    },
+    "west": {
+        "regionid": "S17000016",
+        "regionname": "West Scotland"
+    }
+}

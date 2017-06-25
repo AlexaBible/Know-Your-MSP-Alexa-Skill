@@ -1,0 +1,25 @@
+{
+  "name": "know-Your-MSP-Skill",
+  "version": "1.0.0",
+  "description": "Functions that run the Know Your MSP Alexa skill.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "Alexa",
+    "msp",
+    "skill"
+  ],
+  "author": "Peter McDonald",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AlexaBible/Know-Your-MSP-Alexa-Skill/issues"
+  },
+  "homepage": "https://knowyourmsp.com/",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0",
+    "request": "^2.81.0"
+  }
+}

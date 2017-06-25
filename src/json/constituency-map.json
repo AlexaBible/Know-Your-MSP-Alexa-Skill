@@ -1,0 +1,598 @@
+{
+    "aberdeencentral": {
+        "constituencyid": "S16000074",
+        "constituencyname": "Aberdeen Central"
+    },
+    "aberdeendonside": {
+        "constituencyid": "S16000075",
+        "constituencyname": "Aberdeen Donside"
+    },
+    "aberdeensouthandnorthkincardine": {
+        "constituencyid": "S16000076",
+        "constituencyname": "Aberdeen South and North Kincardine"
+    },
+    "aberdeenshireeast": {
+        "constituencyid": "S16000077",
+        "constituencyname": "Aberdeenshire East"
+    },
+    "aberdeenshirewest": {
+        "constituencyid": "S16000078",
+        "constituencyname": "Aberdeenshire West"
+    },
+    "Airdrie": {
+        "constituencyid": "S16000079",
+        "constituencyname": "Airdrie and Shotts"
+    },
+    "Shotts": {
+        "constituencyid": "S16000079",
+        "constituencyname": "Airdrie and Shotts"
+    },
+    "airdrieandshotts": {
+        "constituencyid": "S16000079",
+        "constituencyname": "Airdrie and Shotts"
+    },
+    "almondvalley": {
+        "constituencyid": "S16000080",
+        "constituencyname": "Almond Valley"
+    },
+    "angusnorth": {
+        "constituencyid": "S16000081",
+        "constituencyname": "Angus North and Mearns"
+    },
+    "mearns": {
+        "constituencyid": "S16000081",
+        "constituencyname": "Angus North and Mearns"
+    },
+    "angusnorthandmearns": {
+        "constituencyid": "S16000081",
+        "constituencyname": "Angus North and Mearns"
+    },
+    "angussouth": {
+        "constituencyid": "S16000082",
+        "constituencyname": "Angus South"
+    },
+    "argyll": {
+        "constituencyid": "S16000083",
+        "constituencyname": "Argyll and Bute"
+    },
+    "bute": {
+        "constituencyid": "S16000083",
+        "constituencyname": "Argyll and Bute"
+    },
+    "argyllandbute": {
+        "constituencyid": "S16000083",
+        "constituencyname": "Argyll and Bute"
+    },
+    "ayr": {
+        "constituencyid": "S16000084",
+        "constituencyname": "Ayr"
+    },
+    "banffshire": {
+        "constituencyid": "S16000085",
+        "constituencyname": "Banffshire and Buchan Coast"
+    },
+    "buchan": {
+        "constituencyid": "S16000085",
+        "constituencyname": "Banffshire and Buchan Coast"
+    },
+    "buchancoast": {
+        "constituencyid": "S16000085",
+        "constituencyname": "Banffshire and Buchan Coast"
+    },
+    "banffshireandbuchancoast": {
+        "constituencyid": "S16000085",
+        "constituencyname": "Banffshire and Buchan Coast"
+    },
+    "caithness": {
+        "constituencyid": "S16000086",
+        "constituencyname": "Caithness, Sutherland and Ross"
+    },
+    "sutherlandand": {
+        "constituencyid": "S16000086",
+        "constituencyname": "Caithness, Sutherland and Ross"
+    },
+    "ross": {
+        "constituencyid": "S16000086",
+        "constituencyname": "Caithness, Sutherland and Ross"
+    },
+    "caithnesssutherlandandross": {
+        "constituencyid": "S16000086",
+        "constituencyname": "Caithness, Sutherland and Ross"
+    },
+    "carrick": {
+        "constituencyid": "S16000087",
+        "constituencyname": "Carrick, Cumnock and Doon Valley"
+    },
+    "cumnock": {
+        "constituencyid": "S16000087",
+        "constituencyname": "Carrick, Cumnock and Doon Valley"
+    },
+    "doonvalley": {
+        "constituencyid": "S16000087",
+        "constituencyname": "Carrick, Cumnock and Doon Valley"
+    },
+    "carrickcumnockanddoonvalley": {
+        "constituencyid": "S16000087",
+        "constituencyname": "Carrick, Cumnock and Doon Valley"
+    },
+    "clackmannanshire": {
+        "constituencyid": "S16000088",
+        "constituencyname": "Clackmannanshire and Dunblane"
+    },
+    "dunblane": {
+        "constituencyid": "S16000088",
+        "constituencyname": "Clackmannanshire and Dunblane"
+    },
+    "clackmannanshireanddunblane": {
+        "constituencyid": "S16000088",
+        "constituencyname": "Clackmannanshire and Dunblane"
+    },
+    "clydebank": {
+        "constituencyid": "S16000089",
+        "constituencyname": "Clydebank and Milngavie"
+    },
+    "milngavie": {
+        "constituencyid": "S16000089",
+        "constituencyname": "Clydebank and Milngavie"
+    },
+    "clydebankandmilngavie": {
+        "constituencyid": "S16000089",
+        "constituencyname": "Clydebank and Milngavie"
+    },
+    "clydesdale": {
+        "constituencyid": "S16000090",
+        "constituencyname": "Clydesdale"
+    },
+    "coatbridge": {
+        "constituencyid": "S16000091",
+        "constituencyname": "Coatbridge and Chryston"
+    },
+    "chryston": {
+        "constituencyid": "S16000091",
+        "constituencyname": "Coatbridge and Chryston"
+    },
+    "coatbridgeandchryston": {
+        "constituencyid": "S16000091",
+        "constituencyname": "Coatbridge and Chryston"
+    },
+    "cowdenbeath": {
+        "constituencyid": "S16000092",
+        "constituencyname": "Cowdenbeath"
+    },
+    "cumbernauld": {
+        "constituencyid": "S16000093",
+        "constituencyname": "Cumbernauld and Kilsyth"
+    },
+    "kilsyth": {
+        "constituencyid": "S16000093",
+        "constituencyname": "Cumbernauld and Kilsyth"
+    },
+    "cumbernauldandkilsyth": {
+        "constituencyid": "S16000093",
+        "constituencyname": "Cumbernauld and Kilsyth"
+    },
+    "cunninghamenorth": {
+        "constituencyid": "S16000094",
+        "constituencyname": "Cunninghame North"
+    },
+    "cunninghamesouth": {
+        "constituencyid": "S16000095",
+        "constituencyname": "Cunninghame South"
+    },
+    "dumbarton": {
+        "constituencyid": "S16000096",
+        "constituencyname": "Dumbarton"
+    },
+    "dumfriesshire": {
+        "constituencyid": "S16000097",
+        "constituencyname": "Dumfriesshire"
+    },
+    "dundeeeast": {
+        "constituencyid": "S16000098",
+        "constituencyname": "Dundee City East"
+    },
+    "dundeecityeast": {
+        "constituencyid": "S16000098",
+        "constituencyname": "Dundee City East"
+    },
+    "dundeewest": {
+        "constituencyid": "S16000099",
+        "constituencyname": "Dundee City West"
+    },
+    "dundeecitywest": {
+        "constituencyid": "S16000099",
+        "constituencyname": "Dundee City West"
+    },
+    "dunfermline": {
+        "constituencyid": "S16000100",
+        "constituencyname": "Dunfermline"
+    },
+    "kilbride": {
+        "constituencyid": "S16000101",
+        "constituencyname": "East Kilbride"
+    },
+    "eastkilbride": {
+        "constituencyid": "S16000101",
+        "constituencyname": "East Kilbride"
+    },
+    "lothian": {
+        "constituencyid": "S16000102",
+        "constituencyname": "East Lothian"
+    },
+    "eastlothian": {
+        "constituencyid": "S16000102",
+        "constituencyname": "East Lothian"
+    },
+    "eastwood": {
+        "constituencyid": "S16000103",
+        "constituencyname": "Eastwood"
+    },
+    "edinburghcentral": {
+        "constituencyid": "S16000104",
+        "constituencyname": "Edinburgh Central"
+    },
+    "edinburgheastern": {
+        "constituencyid": "S16000105",
+        "constituencyname": "Edinburgh Eastern"
+    },
+    "edinburghnorthern": {
+        "constituencyid": "S16000106",
+        "constituencyname": "Edinburgh Northern and Leith"
+    },
+    "leith": {
+        "constituencyid": "S16000106",
+        "constituencyname": "Edinburgh Northern and Leith"
+    },
+    "edinburghnorthernandleith": {
+        "constituencyid": "S16000106",
+        "constituencyname": "Edinburgh Northern and Leith"
+    },
+    "pentlands": {
+        "constituencyid": "S16000107",
+        "constituencyname": "Edinburgh Pentlands"
+    },
+    "edinburghpentlands": {
+        "constituencyid": "S16000107",
+        "constituencyname": "Edinburgh Pentlands"
+    },
+    "edinburghsouthern": {
+        "constituencyid": "S16000108",
+        "constituencyname": "Edinburgh Southern"
+    },
+    "edinburghwestern": {
+        "constituencyid": "S16000109",
+        "constituencyname": "Edinburgh Western"
+    },
+    "naheileanananiar": {
+        "constituencyid": "S16000110",
+        "constituencyname": "Na h-Eileanan an Iar"
+    },
+    "ettrick": {
+        "constituencyid": "S16000111",
+        "constituencyname": "Ettrick, Roxburgh and Berwickshire"
+    },
+    "roxburgh": {
+        "constituencyid": "S16000111",
+        "constituencyname": "Ettrick, Roxburgh and Berwickshire"
+    },
+    "berwickshire": {
+        "constituencyid": "S16000111",
+        "constituencyname": "Ettrick, Roxburgh and Berwickshire"
+    },
+    "ettrickroxburghandberwickshire": {
+        "constituencyid": "S16000111",
+        "constituencyname": "Ettrick, Roxburgh and Berwickshire"
+    },
+    "falkirkeast": {
+        "constituencyid": "S16000112",
+        "constituencyname": "Falkirk East"
+    },
+    "falkirkwest": {
+        "constituencyid": "S16000113",
+        "constituencyname": "Falkirk West"
+    },
+    "galloway": {
+        "constituencyid": "S16000114",
+        "constituencyname": "Galloway and West Dumfries"
+    },
+    "westdumfries": {
+        "constituencyid": "S16000114",
+        "constituencyname": "Galloway and West Dumfries"
+    },
+    "gallowayandwestdumfries": {
+        "constituencyid": "S16000114",
+        "constituencyname": "Galloway and West Dumfries"
+    },
+    "anniesland": {
+        "constituencyid": "S16000115",
+        "constituencyname": "Glasgow Anniesland"
+    },
+    "glasgowanniesland": {
+        "constituencyid": "S16000115",
+        "constituencyname": "Glasgow Anniesland"
+    },
+    "cathcart": {
+        "constituencyid": "S16000116",
+        "constituencyname": "Glasgow Cathcart"
+    },
+    "glasgowcathcart": {
+        "constituencyid": "S16000116",
+        "constituencyname": "Glasgow Cathcart"
+    },
+    "kelvin": {
+        "constituencyid": "S16000117",
+        "constituencyname": "Glasgow Kelvin"
+    },
+    "glasgowkelvin": {
+        "constituencyid": "S16000117",
+        "constituencyname": "Glasgow Kelvin"
+    },
+    "glasgowmaryhill": {
+        "constituencyid": "S16000118",
+        "constituencyname": "Glasgow Maryhill and Springburn"
+    },
+    "maryhill": {
+        "constituencyid": "S16000118",
+        "constituencyname": "Glasgow Maryhill and Springburn"
+    },
+    "springburn": {
+        "constituencyid": "S16000118",
+        "constituencyname": "Glasgow Maryhill and Springburn"
+    },
+    "glasgowmaryhillandspringburn": {
+        "constituencyid": "S16000118",
+        "constituencyname": "Glasgow Maryhill and Springburn"
+    },
+    "pollok": {
+        "constituencyid": "S16000119",
+        "constituencyname": "Glasgow Pollok"
+    },
+    "glasgowpollok": {
+        "constituencyid": "S16000119",
+        "constituencyname": "Glasgow Pollok"
+    },
+    "provan": {
+        "constituencyid": "S16000120",
+        "constituencyname": "Glasgow Provan"
+    },
+    "glasgowprovan": {
+        "constituencyid": "S16000120",
+        "constituencyname": "Glasgow Provan"
+    },
+    "shettleston": {
+        "constituencyid": "S16000121",
+        "constituencyname": "Glasgow Shettleston"
+    },
+    "glasgowshettleston": {
+        "constituencyid": "S16000121",
+        "constituencyname": "Glasgow Shettleston"
+    },
+    "southside": {
+        "constituencyid": "S16000122",
+        "constituencyname": "Glasgow Southside"
+    },
+    "glasgowsouthside": {
+        "constituencyid": "S16000122",
+        "constituencyname": "Glasgow Southside"
+    },
+    "greenock": {
+        "constituencyid": "S16000123",
+        "constituencyname": "Greenock and Inverclyde"
+    },
+    "inverclyde": {
+        "constituencyid": "S16000123",
+        "constituencyname": "Greenock and Inverclyde"
+    },
+    "greenockandinverclyde": {
+        "constituencyid": "S16000123",
+        "constituencyname": "Greenock and Inverclyde"
+    },
+    "hamilton": {
+        "constituencyid": "S16000124",
+        "constituencyname": "Hamilton, Larkhall and Stonehouse"
+    },
+    "larkhall": {
+        "constituencyid": "S16000124",
+        "constituencyname": "Hamilton, Larkhall and Stonehouse"
+    },
+    "stonehouse": {
+        "constituencyid": "S16000124",
+        "constituencyname": "Hamilton, Larkhall and Stonehouse"
+    },
+    "hamiltonlarkhallandstonehouse": {
+        "constituencyid": "S16000124",
+        "constituencyname": "Hamilton, Larkhall and Stonehouse"
+    },
+    "inverness": {
+        "constituencyid": "S16000125",
+        "constituencyname": "Inverness and Nairn"
+    },
+    "nairn": {
+        "constituencyid": "S16000125",
+        "constituencyname": "Inverness and Nairn"
+    },
+    "invernessandnairn": {
+        "constituencyid": "S16000125",
+        "constituencyname": "Inverness and Nairn"
+    },
+    "kilmarnock": {
+        "constituencyid": "S16000126",
+        "constituencyname": "Kilmarnock and Irvine Valley"
+    },
+    "irvine": {
+        "constituencyid": "S16000126",
+        "constituencyname": "Kilmarnock and Irvine Valley"
+    },
+    "irvinevalley": {
+        "constituencyid": "S16000126",
+        "constituencyname": "Kilmarnock and Irvine Valley"
+    },
+    "kirkcaldy": {
+        "constituencyid": "S16000127",
+        "constituencyname": "Kirkcaldy"
+    },
+    "linlithgow": {
+        "constituencyid": "S16000128",
+        "constituencyname": "Linlithgow"
+    },
+    "midfife": {
+        "constituencyid": "S16000129",
+        "constituencyname": "Mid Fife and Glenrothes"
+    },
+    "glenrothes": {
+        "constituencyid": "S16000129",
+        "constituencyname": "Mid Fife and Glenrothes"
+    },
+    "midfifeandglenrothes": {
+        "constituencyid": "S16000129",
+        "constituencyname": "Mid Fife and Glenrothes"
+    },
+    "midlothiannorth": {
+        "constituencyid": "S16000130",
+        "constituencyname": "Midlothian North and Musselburgh"
+    },
+    "musselburgh": {
+        "constituencyid": "S16000130",
+        "constituencyname": "Midlothian North and Musselburgh"
+    },
+    "midlothiannorthandmusselburgh": {
+        "constituencyid": "S16000130",
+        "constituencyname": "Midlothian North and Musselburgh"
+    },
+    "midlothiansouth": {
+        "constituencyid": "S16000131",
+        "constituencyname": "Midlothian South, Tweeddale and Lauderdale"
+    },
+    "tweeddale": {
+        "constituencyid": "S16000131",
+        "constituencyname": "Midlothian South, Tweeddale and Lauderdale"
+    },
+    "lauderdale": {
+        "constituencyid": "S16000131",
+        "constituencyname": "Midlothian South, Tweeddale and Lauderdale"
+    },
+    "midlothiansouthtweeddaleandlauderdale": {
+        "constituencyid": "S16000131",
+        "constituencyname": "Midlothian South, Tweeddale and Lauderdale"
+    },
+    "moray": {
+        "constituencyid": "S16000132",
+        "constituencyname": "Moray"
+    },
+    "motherwell": {
+        "constituencyid": "S16000133",
+        "constituencyname": "Motherwell and Wishaw"
+    },
+    "wishaw": {
+        "constituencyid": "S16000133",
+        "constituencyname": "Motherwell and Wishaw"
+    },
+    "motherwellandwishaw": {
+        "constituencyid": "S16000133",
+        "constituencyname": "Motherwell and Wishaw"
+    },
+    "northeastfife": {
+        "constituencyid": "S16000134",
+        "constituencyname": "North East Fife"
+    },
+    "orkney": {
+        "constituencyid": "S16000135",
+        "constituencyname": "Orkney Islands"
+    },
+    "orkneyislands": {
+        "constituencyid": "S16000135",
+        "constituencyname": "Orkney Islands"
+    },
+    "paisley": {
+        "constituencyid": "S16000136",
+        "constituencyname": "Paisley"
+    },
+    "perthshirenorth": {
+        "constituencyid": "S16000137",
+        "constituencyname": "Perthshire North"
+    },
+    "perthshiresouth": {
+        "constituencyid": "S16000138",
+        "constituencyname": "Perthshire South and Kinross-shire"
+    },
+    "kinrossshire": {
+        "constituencyid": "S16000138",
+        "constituencyname": "Perthshire South and Kinross-shire"
+    },
+    "perthshiresouthandkinrossshire": {
+        "constituencyid": "S16000138",
+        "constituencyname": "Perthshire South and Kinross-shire"
+    },
+    "renfrewshirenorth": {
+        "constituencyid": "S16000139",
+        "constituencyname": "Renfrewshire North and West"
+    },
+    "renfrewshirewest": {
+        "constituencyid": "S16000139",
+        "constituencyname": "Renfrewshire North and West"
+    },
+    "renfrewshirenorthandwest": {
+        "constituencyid": "S16000139",
+        "constituencyname": "Renfrewshire North and West"
+    },
+    "renfrewshiresouth": {
+        "constituencyid": "S16000140",
+        "constituencyname": "Renfrewshire South"
+    },
+    "rutherglen": {
+        "constituencyid": "S16000141",
+        "constituencyname": "Rutherglen"
+    },
+    "shetland": {
+        "constituencyid": "S16000142",
+        "constituencyname": "Shetland Islands"
+    },
+    "shetlandislands": {
+        "constituencyid": "S16000142",
+        "constituencyname": "Shetland Islands"
+    },
+    "skye": {
+        "constituencyid": "S16000143",
+        "constituencyname": "Skye, Lochaber and Badenoch"
+    },
+    "lochaberand": {
+        "constituencyid": "S16000143",
+        "constituencyname": "Skye, Lochaber and Badenoch"
+    },
+    "badenoch": {
+        "constituencyid": "S16000143",
+        "constituencyname": "Skye, Lochaber and Badenoch"
+    },
+    "skyelochaberandbadenoch": {
+        "constituencyid": "S16000143",
+        "constituencyname": "Skye, Lochaber and Badenoch"
+    },
+    "stirling": {
+        "constituencyid": "S16000144",
+        "constituencyname": "Stirling"
+    },
+    "strathkelvin": {
+        "constituencyid": "S16000145",
+        "constituencyname": "Strathkelvin and Bearsden"
+    },
+    "bearsden": {
+        "constituencyid": "S16000145",
+        "constituencyname": "Strathkelvin and Bearsden"
+    },
+    "strathkelvinandbearsden": {
+        "constituencyid": "S16000145",
+        "constituencyname": "Strathkelvin and Bearsden"
+    },
+    "uddingstonand": {
+        "constituencyid": "S16000146",
+        "constituencyname": "Uddingston and Bellshill"
+    },
+    "bellshill": {
+        "constituencyid": "S16000146",
+        "constituencyname": "Uddingston and Bellshill"
+    },
+    "uddingstonandbellshill": {
+        "constituencyid": "S16000146",
+        "constituencyname": "Uddingston and Bellshill"
+    }
+}
