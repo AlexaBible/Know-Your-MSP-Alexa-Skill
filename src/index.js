@@ -14,6 +14,8 @@ const BaseURL = "https://knowyourmsp.com/api/";
 
 var constituencyMSP = null;
 
+var that = null;
+
 //Method loads and parses the specified json file that is located within lambda
 function loadJson(filename){
     var fs = require('fs');
@@ -90,12 +92,16 @@ function generateConstituencyOutput(json){
                 var date = new Date(response.constituncy.activeuntil);
                 output = output + " was replaced on " + date.toDateString() + ".";
                 output = output + " Is there anything else I can help with?";
+                //Set task for yes/no intents
+                that.attributes['task'] = 'AnythingFurther';
             } else {
                 //if not defunct they will have an MSP, output the details
                 output = output + "is represented by " + response.constituncy.msp.name + " from " + response.constituncy.msp.party.name + ".";
                 output = output + " Would you like to know more about " + response.constituncy.msp.name + "?";
                 //add msp name to the constituencyMSP variable, this might be needed for a task.
                 constituencyMSP = response.constituncy.msp.name;
+                //Set task for yes/no intents
+                that.attributes['task'] = 'ConstituencyMSPInformation';
             }
             error = false;
         }
@@ -172,7 +178,8 @@ function generateRegionConstituencyListOutput(json){
                         output = output + response.constituencies[i].name + ", ";
                     }
                 }
-            }
+            }//Set task for yes/no intents
+            that.attributes['task'] = 'AnythingFurther';
             //Add a question to the output
             output = output + " Is there anything else I can help with?";
             //Set to false advising no errors
@@ -187,7 +194,7 @@ function generateRegionConstituencyListOutput(json){
 }
 
 //Function for outputting the constituency list for a region
-function getConstituenciesForRegion(region, that){
+function getConstituenciesForRegion(region){
     //Check if the passed region is empty
     if(region == '') {
         //output error message advising we need the region
@@ -219,15 +226,19 @@ function getConstituenciesForRegion(region, that){
     }
 }
 
-function getMSPInformation(that){
+function getMSPInformation(){
     //Function to obtain msp information, ued by yesIntent and MSPInformationByName 
     var mspName = "";
     //check if this is reached due to an open task
     if(that.attributes['task'] == "ConstituencyMSPInformation" && constituencyMSP != null){
         mspName = constituencyMSP;
-    } else {
+    } else if("msp" in that.event.request.intent.slots && "value" in that.event.request.intent.slots.msp) {
         //No task so get user input
         mspName = that.event.request.intent.slots.msp.value;
+    } else {
+        //If we reach here we do not know the constituency or MSP the user is requesting
+        that.emit(':ask', "Please start by telling me which m s p, constituency or region you are in.", "Which m s p, constituency or regoin are you looking for.");
+        return;
     }
     //Make api call
     getNetworkResource((error, response, body)=>{
@@ -237,7 +248,7 @@ function getMSPInformation(that){
         if(!error && !output.isError){
             //Output response if no error found
             that.emit(':ask', output.response);
-        } else if (!output.isError) {
+        } else if (output.isError) {
             //Output response for api error
             that.emit(':tell', output.response);
         } else {
@@ -252,6 +263,7 @@ function generateMSPInformationOutput(json){
     var error = true;
     try{
         //Try to parse the json
+        console.log(json);
         var response = JSON.parse(json);
         //Check if the API advises of a call error
         if(response.result.toLowerCase === "failure"){
@@ -273,12 +285,15 @@ function generateMSPInformationOutput(json){
                 //Check if the MSP represents a constituency, if they do add details
                 output = output + " " + pronoun + " the elected MSP for the constituency " + response.msp.constituency.name + ".";
             }
+            // Set the task ready for the yesintent.
+            that.attributes['task'] = 'AnythingFurther';
             //Add question to see if they would like anything else.
             output = output + " Is there anything else you would like to know?";
             //Set that no error occured
             error = false;
         }
     } catch(e){
+        console.log(e);
         //Output error if try block failed, usually caused by parse if the api isnt available
         output = 'We seem to have run into difficulties. Please try again later.';
     }
@@ -288,15 +303,18 @@ function generateMSPInformationOutput(json){
 
 const handlers = {
     'LaunchRequest': function () {
+        that = this;
         //Handle session open request
         this.emit(':ask', 'How may I help you?', 'How may I help you?');
     },
     'MSPInformationByName': function(){
+        that = this;
         //Intent to get msp info when a user requests by name
         //Pass request to another function
-        getMSPInformation(this);
+        getMSPInformation();
     },
     'SetRegion': function(){
+        that = this;
         //Intent to get region information
         //Get region details based on the region name from the user
         var regionDetails = getRegion(this.event.request.intent.slots.region.value);
@@ -324,6 +342,7 @@ const handlers = {
         }
     },
     'ListRegions': function(){
+        that = this;
         //Intent to handle user requesting a list of regions
         //Get the list of regions from the json file
         var Regions = loadJson('regions.json');
@@ -335,6 +354,7 @@ const handlers = {
         this.emit(':ask', "There are " + regionCount + " regions in Scotland, these are " + regionsJoined + ". Which would you like?", "Which would you like?");
     },
     'SetConstituency': function(){
+        that = this;
         //Intent to obtain the constituency details
         var constituencyDetails = getConstituency(this.event.request.intent.slots.constituency.value);
         //Check the constituency is real
@@ -378,22 +398,27 @@ const handlers = {
         }
     },
     'About': function(){
+        that = this;
         //Output details about the intent and creator
         this.emit(':tell', "Know your MSP is a companion skill to the site know your msp dot com. We utilise the API located on data dot parliament dot scot. Our aim is to make it easy to get relevant information about the Scottish Parliament and your constituency. For more information, visit know your msp dot com.");
     },
     'AMAZON.HelpIntent': function () {
+        that = this;
         //Built in intent to tell user how to use the skill
         this.emit(':ask', 'I can give you information about your constituency, for example you can say ask me tell me about the Dundee East constituency or ask me about a specific MSP by saying tell me about Shona Robison. What would you like to know?', 'How would you like me to help you?');
     },
     'AMAZON.CancelIntent': function () {
+        that = this;
         //Simple goodbye if the user ends the intent
         this.emit(':tell', 'Goodbye!');
     },
     'AMAZON.StopIntent': function () {
+        that = this;
         //Simple goodbye if the user ends the intent
         this.emit(':tell', 'Goodbye!');
     },
     'AMAZON.NoIntent': function () {
+        that = this;
         //Handle no intent, intended for if a task has been set
         if(this.attributes['task'] == ''){
             this.emit(':ask', "I did not understand the request, how can I help you?", "How can I help you?");
@@ -408,7 +433,7 @@ const handlers = {
                 case 'ConstituencyMSPInformation':
                     //After giving constituency details, handles no if user wishes to know more about the msp.
                     constituencyMSP = this.attributes['msp'];
-                    getMSPInformation(this);
+                    getMSPInformation();
                     break;
                 case 'AnythingFurther':
                     //Simple task, ask the user if there is anything further
@@ -422,6 +447,7 @@ const handlers = {
         }
     },
     'AMAZON.YesIntent': function () {
+        that = this;
         //Handle yes intent, intended for if a task has been set
         if(this.attributes['task'] == ''){
             //Handle case where task is not set
@@ -431,12 +457,12 @@ const handlers = {
             switch(currentTask) {
                 case 'ShouldListConstituenciesForRegion':
                     //After hearing region info handles user wishing to hear the regions constituency list
-                    getConstituenciesForRegion(this.attributes['region'], this);
+                    getConstituenciesForRegion(this.attributes['region']);
                     break;
                 case 'ConstituencyMSPInformation':
                     //After giving constituency details, handles yes if user wishes to know more about the msp, saves the user specifying again.
                     constituencyMSP = this.attributes['msp'];
-                    getMSPInformation(this);
+                    getMSPInformation();
                     break;
                 case 'AnythingFurther':
                     //Simple task, ask the user if there is anything further
