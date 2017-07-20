@@ -1,0 +1,29 @@
+{
+  "session": {
+    "sessionId": "SessionId.27c7b2b3-c3fb-40ce-8e89-115d341b94db",
+    "application": {
+      "applicationId": "amzn1.ask.skill.a642a046-db90-48fd-874f-a337131a7ca4"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AGVTPLQVEU2PI5MGLWUVISQKO6T2OLWZUCURKLZ2WJTFQA4XCTSEXIJLUDNTMNZFJ6WBPHBZSI5BK3GSY7FSW2ERHVHHIKOVCVCQGD2PFHLXQDS73IKF5POFZQIETF2L7HBTOOKLBL4W23IFCDVAS4OTMAPUPNOYPBNUT2GTFEK5Y2ZWXNX5IYKF4DAFUO57J2LYKKIKOKLEOCA"
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.784edc6a-8764-4a3f-8fec-207c663f525c",
+    "locale": "en-GB",
+    "timestamp": "2017-07-20T22:40:42Z",
+    "intent": {
+      "name": "MSPInformationByName",
+      "slots": {
+        "msp": {
+          "name": "msp",
+          "value": "Shona Robison"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

@@ -266,15 +266,15 @@ function generateMSPInformationOutput(json){
         console.log(json);
         var response = JSON.parse(json);
         //Check if the API advises of a call error
-        if(response.result.toLowerCase === "failure"){
+        if(response.result.toLowerCase() == "failure"){
             output = "We were unable to find the MSP you requested.";
         } else {
             //Compile the response based on the json received
             //The scottish government allows for male, female and unspecified, set pronoun to suit
             var pronoun = "They are";
-            if(response.msp.name == "Female"){
+            if(response.msp.gender == "Female"){
                 pronoun = "She is";
-            } else if (response.msp.name == "Male"){
+            } else if (response.msp.gender == "Male"){
                 pronoun = "He is";
             }
             output = response.msp.name + " is a member of " + response.msp.party.name + ".";
@@ -477,6 +477,9 @@ const handlers = {
     },
     'SessionEndedRequest': function () {
         //Handles session end request, should not output anything, used to cleanup but nothing to clean in this skill
+    },
+    'Unhandled': function () {
+        this.emit(':ask', "I did not understand the request, how can I help you?", "How can I help you?");
     },
 };
 
